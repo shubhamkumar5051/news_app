@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News-Monkey</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+</head>
+
+<body style="background-color: rgb(73, 72, 72);" ng-controller="indexController">
+<!-- 
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="#">News-Monkey</a>
+            </div>
+            <ul class="menu" ng-class="{ 'show': isMenuOpen }">
+
+                <li><a ng-href="#/home">Home</a></li>
+                <li><a ng-href="#/category/sports">Sports</a></li>
+                <li><a ng-href="#/category/business">Business</a></li>
+                <li><a ng-href="#/category/technology">Technology</a></li>
+                <li><a ng-href="#/category/health">Health</a></li>
+                <li><a ng-href="#/category/entertainment">Entertainment</a></li>
+                <li><a ng-href="#/category/general">General</a></li>
+                <li><a ng-href="#/category/science">Science</a></li>
+
+                <li><a ng-href="#/signup">SignUp</a></li>
+                <li><a ng-href="#/login">Login</a></li>
+
+
+            </ul>
+          
+
+        </nav>
+    </header> -->
+
+    <!-- <div class="searchBar" style=" width: 50%; margin: 20px auto;" ng-controller="countryController">
+        <form class="d-flex" role="search" ng-submit="getNews()">
+            <input class="form-control me-2" type="search" placeholder="Search By Country" aria-label="Search"
+                ng-model="countryName">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+        <button class="toggle-menu" ng-click="toggleMenu()">Menu</button>
+        <ul class="menu" ng-class="{ 'show': isMenuOpen }">
+    </div>
+    <div>
+
+        <h2 class='text-center my-4 ' style="color: white;">NewsMonkey - Top Headlines</h2>
+    </div> -->
+    <div ng-view></div>
+
+
+
+<!-- 
+    <div class="footer">
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6">
+                        <p>&copy; {{ currentYear }} NewsApp. All rights reserved.</p>
+                    </div>
+                    <div class="col-xs-12 col-sm-6">
+                        <p class="text-right">Powered by <a href="https://newsapi.org/" target="_blank">NewsAPI</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    </div> -->
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular-route.js"></script>
+
+
+    <script src="Controller.js"></script>
+    <script src="Service.js"></script>
+    <script src="routing.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
